@@ -1,0 +1,15 @@
+Number of dirty cells: 388126 (Number of erroneous cells in the data)
+-----------------Error Detection Results-----------------
+Number of detected cells: 341307 (Number of changed values)
+Number of Correctly Detected cells: 333237 (cell was correctly identified as an error)
+Detection precision: 0.976355597746 (ratio of correctly detected cells over all detected cells)
+Detection recall: 0.858579430391 (ratio of correctly detected cells over all erroneous cells in the data)
+Detection F1: 0.913687754736
+-----------------Error Correction Results-----------------
+Destroyed clean cells: 8070 (cell was correct but has been transformed into a wrong value)
+Wrongly cleaned cells: 20845 (cell was wrong but the cleaning was also not correct)
+Undetected cells: 54889 (cell was erroneous but was not touched)
+Number of cells that need yet to be cleaned: 83804 (sum of the 3 cell types above)
+Correction precision = 0.915281550041 (ratio of correctly corrected cells over all changed cells)
+Correction recall = 0.804872644451 (ratio of correctly corrected cells over all erroneous cells in the data)
+Correction F1: 0.856533773493

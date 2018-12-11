@@ -1,0 +1,16 @@
+PS D:\Data Integration\Data Cleaning> python web_client.py
+Number of dirty cells: 388126 (Number of erroneous cells in the data)
+-----------------Error Detection Results-----------------
+Number of detected cells: 339125 (Number of changed values)
+Number of Correctly Detected cells: 333237 (cell was correctly identified as an error)
+Detection precision: 0.982637670475 (ratio of correctly detected cells over all detected cells)
+Detection recall: 0.858579430391 (ratio of correctly detected cells over all erroneous cells in the data)
+Detection F1: 0.91642912832
+-----------------Error Correction Results-----------------
+Destroyed clean cells: 5888 (cell was correct but has been transformed into a wrong value)
+Wrongly cleaned cells: 18681 (cell was wrong but the cleaning was also not correct)
+Undetected cells: 54889 (cell was erroneous but was not touched)
+Number of cells that need yet to be cleaned: 79458 (sum of the 3 cell types above)
+Correction precision = 0.927551787689 (ratio of correctly corrected cells over all changed cells)
+Correction recall = 0.810448153435 (ratio of correctly corrected cells over all erroneous cells in the data)
+Correction F1: 0.865054843513
